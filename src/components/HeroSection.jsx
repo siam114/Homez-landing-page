@@ -1,8 +1,6 @@
 import React from "react";
 import heroImg from "../assets/bg-image.png";
 
-import { FiArrowUpRight } from "react-icons/fi";
-
 const HeroSection = () => {
   return (
     <section

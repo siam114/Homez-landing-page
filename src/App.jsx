@@ -1,4 +1,5 @@
 import './App.css'
+import BestDeals from './components/BestDeals'
 import ExploreApartment from './components/ExploreApartment'
 import ExploreApartmentSlider from './components/ExploreApartmentSlider'
 import HeroSection from './components/HeroSection'
@@ -16,6 +17,7 @@ function App() {
      <ExploreApartmentSlider/>
      <HeroSection/>
      <Testimonials/>
+     <BestDeals/>
     </div>
   )
 }
