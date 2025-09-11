@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
-import vector1 from '../assets/Vector.png'
-import vector2 from '../assets/Vector (1).png'
-import vector3 from '../assets/Vector (2).png'
+import vector1 from "../assets/Vector.png";
+import vector2 from "../assets/Vector (1).png";
+import vector3 from "../assets/Vector (2).png";
 
 const RealtorHelp = () => {
   const services = [
@@ -11,7 +11,7 @@ const RealtorHelp = () => {
       desc: "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
       button: "Find a home",
       buttonColor: "bg-white text-black border hover:bg-gray-100",
-      icon: vector1, 
+      icon: vector1,
     },
     {
       id: 2,
@@ -43,29 +43,28 @@ const RealtorHelp = () => {
 
         <div className="mt-10 grid md:grid-cols-3 gap-6 ">
           {services.map((service) => (
-  <div
-    key={service.id}
-    className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center text-center"
-  >
-    <div className="mb-4">
-      <img 
-        src={service.icon} 
-        alt={service.title} 
-        className="w-12 h-12 object-contain" 
-      />
-    </div>
-    <h3 className="font-semibold text-lg text-gray-900">
-      {service.title}
-    </h3>
-    <p className="text-gray-500 mt-2">{service.desc}</p>
-    <button
-      className={`mt-6 flex items-center gap-2 px-5 py-2 rounded-lg text-sm font-medium transition ${service.buttonColor}`}
-    >
-      {service.button} <ArrowRight size={16} />
-    </button>
-  </div>
-))}
-
+            <div
+              key={service.id}
+              className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center text-center"
+            >
+              <div className="mb-4">
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className="w-12 h-12 object-contain"
+                />
+              </div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                {service.title}
+              </h3>
+              <p className="text-gray-500 mt-2">{service.desc}</p>
+              <button
+                className={`mt-6 flex items-center gap-2 px-5 py-2 rounded-lg text-sm font-medium transition ${service.buttonColor}`}
+              >
+                {service.button} <ArrowRight size={16} />
+              </button>
+            </div>
+          ))}
         </div>
       </div>
     </section>
