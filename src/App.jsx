@@ -10,8 +10,8 @@ function App() {
     <div className=''>
      <Navbar/>
      <ExploreApartment/>
-     <ExploreApartmentSlider/>
      <RealtorHelp/>
+     <ExploreApartmentSlider/>
     </div>
   )
 }
