@@ -1,6 +1,9 @@
 import React from "react";
 import { FaBed, FaBath, FaArrowsAlt } from "react-icons/fa";
-// import image1 from '../assets/'
+import image1 from "../assets/p4.png";
+import image2 from "../assets/p3.png";
+import image3 from "../assets/p2.png";
+import image4 from "../assets/p1.png";
 
 const properties = [
   {
@@ -9,7 +12,7 @@ const properties = [
     beds: 3,
     baths: 2,
     area: 400,
-    img: "https://picsum.photos/400/250?random=1",
+    img: image1,
   },
   {
     title: "Gorgeous Villa Bay",
@@ -17,7 +20,7 @@ const properties = [
     beds: 3,
     baths: 2,
     area: 300,
-    img: "https://picsum.photos/400/250?random=2",
+    img: image2,
   },
   {
     title: "Skyper Pool Apartment",
@@ -25,7 +28,7 @@ const properties = [
     beds: 2,
     baths: 1,
     area: 200,
-    img: "https://picsum.photos/400/250?random=3",
+    img: image3,
   },
   {
     title: "Diamond Manor Apartment",
@@ -33,7 +36,7 @@ const properties = [
     beds: 3,
     baths: 1,
     area: 200,
-    img: "https://picsum.photos/400/250?random=4",
+    img: image4,
   },
 ];
 
@@ -71,14 +74,15 @@ const BestDeals = () => {
               <img
                 src={item.img}
                 alt={item.title}
-                className="w-full h-36 object-cover" 
+                className="w-full h-36 object-cover"
               />
-              <div className="p-3"> 
+              <div className="p-3">
                 <h3 className="text-base font-semibold mb-1">{item.title}</h3>
-                <p className="text-[#e85c47] font-bold text-sm mb-2">
-                  {item.price}
-                </p>
-                <div className="flex items-center gap-3 text-gray-600 text-xs">
+
+                <div className="flex items-center gap-5 text-gray-600 text-xs">
+                  <span className="text-[#e85c47] font-bold text-sm flex items-center gap-1">
+                    {item.price}
+                  </span>
                   <span className="flex items-center gap-1">
                     <FaBed className="text-sm" /> {item.beds}
                   </span>
@@ -86,7 +90,7 @@ const BestDeals = () => {
                     <FaBath className="text-sm" /> {item.baths}
                   </span>
                   <span className="flex items-center gap-1">
-                    <FaArrowsAlt className="text-sm" /> {item.area} m²
+                    <FaArrowsAlt className="text-sm" /> {item.area}
                   </span>
                 </div>
               </div>
