@@ -2,6 +2,7 @@ import './App.css'
 import ExploreApartment from './components/ExploreApartment'
 import ExploreApartmentSlider from './components/ExploreApartmentSlider'
 import Navbar from './components/Navbar'
+import RealtorHelp from './components/RealtorHelp'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
      <Navbar/>
      <ExploreApartment/>
      <ExploreApartmentSlider/>
+     <RealtorHelp/>
     </div>
   )
 }
