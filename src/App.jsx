@@ -1,4 +1,5 @@
 import './App.css'
+import ExploreApartment from './components/ExploreApartment'
 import Navbar from './components/Navbar'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <div className=''>
      <Navbar/>
+     <ExploreApartment/>
     </div>
   )
 }
