@@ -1,5 +1,6 @@
 import './App.css'
 import ExploreApartment from './components/ExploreApartment'
+import ExploreApartmentSlider from './components/ExploreApartmentSlider'
 import Navbar from './components/Navbar'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className=''>
      <Navbar/>
      <ExploreApartment/>
+     <ExploreApartmentSlider/>
     </div>
   )
 }
