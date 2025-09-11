@@ -3,6 +3,7 @@ import ExploreApartment from './components/ExploreApartment'
 import ExploreApartmentSlider from './components/ExploreApartmentSlider'
 import Navbar from './components/Navbar'
 import RealtorHelp from './components/RealtorHelp'
+import Testimonials from './components/Testimonials'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
      <ExploreApartment/>
      <RealtorHelp/>
      <ExploreApartmentSlider/>
+     <Testimonials/>
     </div>
   )
 }
