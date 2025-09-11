@@ -1,4 +1,15 @@
 import React from "react";
+import blog1 from '../assets/blog 1.png'
+import blog2 from '../assets/blog 2.png'
+import blog3 from '../assets/blog 3.png'
+import blog4 from '../assets/blog 4.png'
+
+import trust1 from '../assets/b1.jpg.png'
+import trust2 from '../assets/b2.jpg.png'
+import trust3 from '../assets/b3.jpg.png'
+import trust4 from '../assets/b4.jpg.png'
+import trust5 from '../assets/b5.jpg.png'
+import trust6 from '../assets/b6.jpg.png'
 
 const BlogSection = () => {
   return (
@@ -19,7 +30,7 @@ const BlogSection = () => {
         <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col h-[300px] w-[80%]">
           <div className="relative w-full h-[180px] aspect-square">
             <img
-              src="https://picsum.photos/600/600?random=1"
+              src={blog4}
               alt="blog1"
               className="w-full h-full object-cover"
             />
@@ -41,7 +52,7 @@ const BlogSection = () => {
         <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col h-[300px] w-[80%]">
           <div className="relative w-full h-[180px] aspect-square">
             <img
-              src="https://picsum.photos/600/600?random=2"
+              src={blog3}
               alt="blog2"
               className="w-full h-full object-cover"
             />
@@ -64,7 +75,7 @@ const BlogSection = () => {
           {/* Small Blog 1 */}
           <div className="flex items-center gap-4 bg-white rounded-lg shadow hover:shadow-lg transition p-2">
             <img
-              src="https://picsum.photos/200/200?random=3"
+              src={blog2}
               alt="blog3"
               className="w-28 h-28 object-cover rounded"
             />
@@ -79,7 +90,7 @@ const BlogSection = () => {
           {/* Small Blog 2 */}
           <div className="flex items-center gap-4 bg-white rounded-lg shadow hover:shadow-lg transition p-2">
             <img
-              src="https://picsum.photos/200/200?random=4"
+              src={blog1}
               alt="blog4"
               className="w-28 h-28 object-cover rounded"
             />
@@ -99,23 +110,23 @@ const BlogSection = () => {
         <p className="text-center text-gray-500 mb-6">
           Trusted by the world’s best
         </p>
-        <div className="flex justify-center gap-8 flex-wrap">
+        <div className="flex justify-center gap-28 flex-wrap">
           <img
-            src="https://via.placeholder.com/100x40?text=Amazon"
+            src={trust1}
             alt="Amazon"
           />
-          <img src="https://via.placeholder.com/100x40?text=AMD" alt="AMD" />
-          <img src="https://via.placeholder.com/100x40?text=Cisco" alt="Cisco" />
+          <img src={trust2} alt="AMD" />
+          <img src={trust3} alt="Cisco" />
           <img
-            src="https://via.placeholder.com/100x40?text=Dropcam"
+            src={trust4}
             alt="Dropcam"
           />
           <img
-            src="https://via.placeholder.com/100x40?text=Logitech"
+            src={trust5}
             alt="Logitech"
           />
           <img
-            src="https://via.placeholder.com/100x40?text=Spotify"
+            src={trust6}
             alt="Spotify"
           />
         </div>
