@@ -1,5 +1,6 @@
 import './App.css'
 import BestDeals from './components/BestDeals'
+import BlogSection from './components/BlogSection'
 import ExploreApartment from './components/ExploreApartment'
 import ExploreApartmentSlider from './components/ExploreApartmentSlider'
 import HeroSection from './components/HeroSection'
@@ -18,6 +19,7 @@ function App() {
      <HeroSection/>
      <Testimonials/>
      <BestDeals/>
+     <BlogSection/>
     </div>
   )
 }
