@@ -1,19 +1,19 @@
 import React from "react";
-import blog1 from '../assets/blog 1.png'
-import blog2 from '../assets/blog 2.png'
-import blog3 from '../assets/blog 3.png'
-import blog4 from '../assets/blog 4.png'
+import blog1 from "../assets/blog 1.png";
+import blog2 from "../assets/blog 2.png";
+import blog3 from "../assets/blog 3.png";
+import blog4 from "../assets/blog 4.png";
 
-import trust1 from '../assets/b1.jpg.png'
-import trust2 from '../assets/b2.jpg.png'
-import trust3 from '../assets/b3.jpg.png'
-import trust4 from '../assets/b4.jpg.png'
-import trust5 from '../assets/b5.jpg.png'
-import trust6 from '../assets/b6.jpg.png'
+import trust1 from "../assets/b1.jpg.png";
+import trust2 from "../assets/b2.jpg.png";
+import trust3 from "../assets/b3.jpg.png";
+import trust4 from "../assets/b4.jpg.png";
+import trust5 from "../assets/b5.jpg.png";
+import trust6 from "../assets/b6.jpg.png";
 
 const BlogSection = () => {
   return (
-    <section className="py-16 px-6 max-w-6xl mx-auto">
+    <section className="py-16 px-4 sm:px-6 max-w-6xl mx-auto">
       {/* Title */}
       <div className="text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
@@ -25,10 +25,10 @@ const BlogSection = () => {
       </div>
 
       {/* Blog Grid */}
-      <div className="grid md:grid-cols-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Blog Card 1 */}
-        <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col h-[300px] w-[80%]">
-          <div className="relative w-full h-[180px] aspect-square">
+        <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+          <div className="relative w-full h-[180px]">
             <img
               src={blog4}
               alt="blog1"
@@ -49,8 +49,8 @@ const BlogSection = () => {
         </div>
 
         {/* Blog Card 2 */}
-        <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col h-[300px] w-[80%]">
-          <div className="relative w-full h-[180px] aspect-square">
+        <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden flex flex-col">
+          <div className="relative w-full h-[180px]">
             <img
               src={blog3}
               alt="blog2"
@@ -73,11 +73,11 @@ const BlogSection = () => {
         {/* Blog Card 3 (List Style) */}
         <div className="flex flex-col gap-6">
           {/* Small Blog 1 */}
-          <div className="flex items-center gap-4 bg-white rounded-lg shadow hover:shadow-lg transition p-2">
+          <div className="flex items-center gap-4 bg-white rounded-lg shadow hover:shadow-lg transition p-3">
             <img
               src={blog2}
               alt="blog3"
-              className="w-28 h-28 object-cover rounded"
+              className="w-24 h-24 object-cover rounded"
             />
             <div>
               <span className="text-sm text-gray-500">Townhome</span>
@@ -88,11 +88,11 @@ const BlogSection = () => {
             </div>
           </div>
           {/* Small Blog 2 */}
-          <div className="flex items-center gap-4 bg-white rounded-lg shadow hover:shadow-lg transition p-2">
+          <div className="flex items-center gap-4 bg-white rounded-lg shadow hover:shadow-lg transition p-3">
             <img
               src={blog1}
               alt="blog4"
-              className="w-28 h-28 object-cover rounded"
+              className="w-24 h-24 object-cover rounded"
             />
             <div>
               <span className="text-sm text-gray-500">Houses</span>
@@ -110,25 +110,13 @@ const BlogSection = () => {
         <p className="text-center text-gray-500 mb-6">
           Trusted by the world’s best
         </p>
-        <div className="flex justify-center gap-28 flex-wrap">
-          <img
-            src={trust1}
-            alt="Amazon"
-          />
-          <img src={trust2} alt="AMD" />
-          <img src={trust3} alt="Cisco" />
-          <img
-            src={trust4}
-            alt="Dropcam"
-          />
-          <img
-            src={trust5}
-            alt="Logitech"
-          />
-          <img
-            src={trust6}
-            alt="Spotify"
-          />
+        <div className="flex items-center justify-center gap-10 sm:gap-28 md:gap-14 flex-wrap">
+          <img src={trust1} alt="Amazon" className="h-10 sm:h-10 object-contain" />
+          <img src={trust2} alt="AMD" className="h-10 sm:h-10 object-contain" />
+          <img src={trust3} alt="Cisco" className="h-10 sm:h-10 object-contain" />
+          <img src={trust4} alt="Dropcam" className="h-10 sm:h-10 object-contain" />
+          <img src={trust5} alt="Logitech" className="h-10 sm:h-10 object-contain" />
+          <img src={trust6} alt="Spotify" className="h-10 sm:h-10 object-contain" />
         </div>
       </div>
     </section>
