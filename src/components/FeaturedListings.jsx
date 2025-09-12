@@ -4,6 +4,8 @@ import feature1 from '../assets/feature 1.png'
 import feature2 from '../assets/feature 2.png'
 import feature3 from '../assets/feature 3.png'
 
+import icon1 from '../assets/icon.png'
+
 export default function FeaturedListings() {
   const listings = [
     {
@@ -68,7 +70,7 @@ export default function FeaturedListings() {
                   className="rounded-t-lg w-full h-56 object-cover"
                 />
                 <span className="absolute top-3 left-3 bg-[#EB6753] text-white text-xs px-6 py-2 rounded-md uppercase font-semibold">
-                  Featured
+                 _ _ Featured
                 </span>
               </div>
 
@@ -85,7 +87,7 @@ export default function FeaturedListings() {
                 </p>
                  <div className="flex items-center gap-4">
                      <div className="flex items-center gap-1">
-                    <FaBed /> {listing.beds}
+                       <img src={icon1} className="pt-2" alt="" /> {listing.beds}
                   </div>
                   <div className="flex items-center gap-1">
                     <FaBath /> {listing.baths}
