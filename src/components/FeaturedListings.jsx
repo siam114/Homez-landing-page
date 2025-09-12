@@ -5,6 +5,9 @@ import feature2 from '../assets/feature 2.png'
 import feature3 from '../assets/feature 3.png'
 
 import icon1 from '../assets/icon.png'
+import icon2 from '../assets/icon2.png'
+import icon3 from '../assets/icon3.png'
+import icon4 from '../assets/icon4.png'
 
 export default function FeaturedListings() {
   const listings = [
@@ -51,7 +54,7 @@ export default function FeaturedListings() {
             to="/properties"
             className="flex items-center gap-2 text-sm font-medium text-gray-900 hover:text-gray-600"
           >
-            See All Properties <FaArrowRight />
+            See All Properties <FaArrowRight className='-rotate-45' />
           </Link>
         </div>
 
@@ -69,8 +72,8 @@ export default function FeaturedListings() {
                   alt={listing.title}
                   className="rounded-t-lg w-full h-56 object-cover"
                 />
-                <span className="absolute top-3 left-3 bg-[#EB6753] text-white text-xs px-6 py-2 rounded-md uppercase font-semibold">
-                 _ _ Featured
+                <span className="absolute top-3 left-3 bg-[#EB6753] text-white text-xs px-6 py-2 rounded-md uppercase font-semibold inline-flex items-center gap-2">
+                 <img src={icon4} className="pt-2 w-4" alt="" /> Featured
                 </span>
               </div>
 
@@ -90,10 +93,10 @@ export default function FeaturedListings() {
                        <img src={icon1} className="pt-2" alt="" /> {listing.beds}
                   </div>
                   <div className="flex items-center gap-1">
-                    <FaBath /> {listing.baths}
+                    <img src={icon2} className="pt-2" alt="" /> {listing.baths}
                   </div>
                   <div className="flex items-center gap-1">
-                    <FaRulerCombined /> {listing.area} m²
+                   <img src={icon3} className="pt-2" alt="" /> {listing.area}
                   </div>
                  </div>
                 </div>

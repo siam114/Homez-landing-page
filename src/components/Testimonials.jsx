@@ -98,6 +98,17 @@ const Testimonials = () => {
             ))}
           </Swiper>
         </div>
+         {/* Pagination Dots */}
+        <div className="flex justify-center items-center gap-2 mt-6">
+          {[1, 2, 3, 4].map((dot) => (
+            <span
+              key={dot}
+              className={`h-2 w-2 rounded-full ${
+                dot === 1 ? "bg-gray-800" : "bg-gray-300"
+              }`}
+            ></span>
+          ))}
+        </div>
       </div>
     </section>
   );
