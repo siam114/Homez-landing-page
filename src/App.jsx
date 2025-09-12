@@ -3,6 +3,7 @@ import BestDeals from './components/BestDeals'
 import BlogSection from './components/BlogSection'
 import ExploreApartment from './components/ExploreApartment'
 import ExploreApartmentSlider from './components/ExploreApartmentSlider'
+import FeaturedListings from './components/FeaturedListings'
 import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className=''>
      <Navbar/>
+     <FeaturedListings/>
      <ExploreApartment/>
      <RealtorHelp/>
      <ExploreApartmentSlider/>
