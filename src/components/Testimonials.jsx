@@ -74,8 +74,8 @@ const Testimonials = () => {
               1024: { slidesPerView: 3 },
             }}
           >
-            {testimonials.map((item) => (
-              <SwiperSlide key={item.id}>
+            {testimonials.map((item,index) => (
+              <SwiperSlide key={index}>
                 <div className="bg-white border border-gray-300 rounded-2xl shadow-sm p-6 h-full flex flex-col justify-between">
                   <div className="flex items-center gap-3 mb-4">
                     <img
@@ -100,9 +100,9 @@ const Testimonials = () => {
         </div>
          {/* Pagination Dots */}
         <div className="flex justify-center items-center gap-2 mt-6">
-          {[1, 2, 3, 4].map((dot) => (
+          {[1, 2, 3, 4].map((dot,index) => (
             <span
-              key={dot}
+              key={index}
               className={`h-2 w-2 rounded-full ${
                 dot === 1 ? "bg-gray-800" : "bg-gray-300"
               }`}

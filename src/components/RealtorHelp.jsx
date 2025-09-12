@@ -42,9 +42,9 @@ const RealtorHelp = () => {
         </p>
 
         <div className="mt-10 grid md:grid-cols-3 gap-6 ">
-          {services.map((service) => (
+          {services.map((service,index) => (
             <div
-              key={service.id}
+              key={index}
               className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center text-center"
             >
               <div className="mb-4">

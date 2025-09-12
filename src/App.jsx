@@ -7,6 +7,7 @@ import FeaturedListings from './components/FeaturedListings'
 import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
+import PropertyFilter from './components/PropertyFilter'
 import RealtorHelp from './components/RealtorHelp'
 import Testimonials from './components/Testimonials'
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className=''>
      <Navbar/>
+     <PropertyFilter/>
      <FeaturedListings/>
      <ExploreApartment/>
      <RealtorHelp/>

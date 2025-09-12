@@ -111,12 +111,12 @@ const BlogSection = () => {
           Trusted by the world’s best
         </p>
         <div className="flex items-center justify-center gap-10 sm:gap-28 md:gap-14 flex-wrap">
-          <img src={trust1} alt="Amazon" className="h-10 sm:h-10 object-contain" />
-          <img src={trust2} alt="AMD" className="h-10 sm:h-10 object-contain" />
-          <img src={trust3} alt="Cisco" className="h-10 sm:h-10 object-contain" />
-          <img src={trust4} alt="Dropcam" className="h-10 sm:h-10 object-contain" />
-          <img src={trust5} alt="Logitech" className="h-10 sm:h-10 object-contain" />
-          <img src={trust6} alt="Spotify" className="h-10 sm:h-10 object-contain" />
+          <img src={trust1} alt="Amazon" className="h-8 sm:h-10 object-contain" />
+          <img src={trust2} alt="AMD" className="h-8 sm:h-10 object-contain" />
+          <img src={trust3} alt="Cisco" className="h-8 sm:h-10 object-contain" />
+          <img src={trust4} alt="Dropcam" className="h-8 sm:h-10 object-contain" />
+          <img src={trust5} alt="Logitech" className="h-8 sm:h-10 object-contain" />
+          <img src={trust6} alt="Spotify" className="h-8 sm:h-10 object-contain" />
         </div>
       </div>
     </section>

@@ -7,14 +7,14 @@ const Footer = () => {
   return (
     <footer className="bg-[#181A20] text-white pt-12 pb-6 px-6 md:px-20">
       {/* Newsletter Section */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 w-full">
         <h2 className="text-2xl font-semibold mb-2">Subscribe Our Newsletter</h2>
         <p className="text-gray-400 mb-4">We don't send spam so don't worry.</p>
-        <div className="flex justify-center">
+        <div className="flex justify-center sm:px-0 w-full px-5">
           <input
             type="email"
             placeholder="Your email"
-            className="px-5 py-4 rounded-l-md w-64 focus:outline-none text-black bg-white"
+            className="px-5 py-4 rounded-l-md max-w-64 focus:outline-none text-black bg-white"
           />
           <button className="bg-[#EB6753] px-4 py-2 rounded-r-md hover:bg-[#eb6753ef] transition">
             Subscribe

@@ -38,7 +38,7 @@ export default function FeaturedListings() {
   ];
 
   return (
-    <section className="bg-gray-50 pb-12 md:pt-32">
+    <section className="bg-gray-50 py-12 md:pt-32">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
@@ -107,9 +107,9 @@ export default function FeaturedListings() {
 
         {/* Pagination Dots */}
         <div className="flex justify-center items-center gap-2 mt-6">
-          {[1, 2, 3, 4].map((dot) => (
+          {[1, 2, 3, 4].map((dot,index) => (
             <span
-              key={dot}
+              key={index}
               className={`h-2 w-2 rounded-full ${
                 dot === 1 ? "bg-gray-800" : "bg-gray-300"
               }`}
