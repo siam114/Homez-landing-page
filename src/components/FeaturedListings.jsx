@@ -38,7 +38,7 @@ export default function FeaturedListings() {
   ];
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-50 pb-12 md:pt-32">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
