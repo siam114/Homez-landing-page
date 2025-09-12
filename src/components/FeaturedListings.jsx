@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaBed, FaBath, FaRulerCombined } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import feature1 from '../assets/feature 1.png'
 import feature2 from '../assets/feature 2.png'
 import feature3 from '../assets/feature 3.png'
